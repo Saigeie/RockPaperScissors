@@ -1,0 +1,65 @@
+/* Colors from https://coolors.co/ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --flickr-pink: #f72585ff;
+  --byzantine: #b5179eff;
+  --purple: #7209b7ff;
+  --purple-2: #560badff;
+  --trypan-blue: #480ca8ff;
+  --trypan-blue-2: #3a0ca3ff;
+  --persian-blue: #3f37c9ff;
+  --ultramarine-blue: #4361eeff;
+  --dodger-blue: #4895efff;
+  --vivid-sky-blue: #4cc9f0ff;
+  --heading-font: "Degular", sans-serif;
+  --offwhite: #e7e4e4;
+  --white: #ffffff;
+  --red: #ff2145;
+  --black: #181d23;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--offwhite);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    margin-top: 5rem;
+    margin-bottom: 1rem !important;
+}
+
+.choices {
+    display: flex;
+}
+.choices h3:last-child {
+    margin-left: 20px;
+}
+.choices h3:first-child { margin-right: 20px ;}
+
+.choices h3 {
+    opacity: 0.5;
+    transition: opacity 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.winner {
+    color: var(--red);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-bottom: 1px dashed var(-red);
+}
+
+.choices h3:hover {
+    opacity: 1;
+}

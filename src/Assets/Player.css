@@ -1,0 +1,48 @@
+/* Colors from https://coolors.co/ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --flickr-pink: #f72585ff;
+  --byzantine: #b5179eff;
+  --purple: #7209b7ff;
+  --purple-2: #560badff;
+  --trypan-blue: #480ca8ff;
+  --trypan-blue-2: #3a0ca3ff;
+  --persian-blue: #3f37c9ff;
+  --ultramarine-blue: #4361eeff;
+  --dodger-blue: #4895efff;
+  --vivid-sky-blue: #4cc9f0ff;
+  --heading-font: "Degular", sans-serif;
+  --offwhite: #e7e4e4;
+  --white: #ffffff;
+  --black: #181d23;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--offwhite);
+}
+
+.main {
+  display: flex;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: var(--white);
+  padding: 12px 30px 12px;
+  margin-right: 10px;
+  border-radius: 50px;
+  border: 2px solid var(--black);
+  color: var(--black) !important;
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+  font-size: calc(14rem / 16);
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 1.456;
+  display: inline-flex;
+}
